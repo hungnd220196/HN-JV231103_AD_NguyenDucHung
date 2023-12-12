@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="card-form">
+      <label for="cardNumber">Card Number:</label>
+      <input
+        type="text"
+        id="cardNumber"
+        placeholder="Enter card number"
+        maxlength="16"
+      />
+
+      <label for="expiryDate">Expiry Date:</label>
+      <input type="text" id="expiryDate" placeholder="MM/YYYY" />
+
+      <label for="cvv">CVV:</label>
+      <input type="password" id="cvv" placeholder="Enter CVV" maxlength="3" />
+
+      <label for="cardImage">Card Image:</label>
+      <select id="cardImage">
+        <option value="card1.jpg">Card 1</option>
+        <option value="card2.jpg">Card 2</option>
+      </select>
+
+      <button onclick="saveCard()">Save Card</button>
+    </div>
+
+    <div class="card-list">
+      <h2>Danh sách thẻ</h2>
+      <ul id="card-list"></ul>
+    </div>
+
+    <script src="./hkt3.js"></script>
+  </body>
+</html>
